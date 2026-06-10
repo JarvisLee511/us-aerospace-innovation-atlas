@@ -1,8 +1,17 @@
 # US Aerospace Innovation Atlas ✈️🛰️
 
-**Where U.S. aeronautics & astronautics patents were invented, 2000–2015 — an interactive geographic analysis.**
+> Where America invents aerospace — a 16-year, 5,200+-patent geographic data product, built end-to-end.
 
-This project grows a single-year classroom map (one static 2012 choropleth) into a reproducible data pipeline, a 16-year analysis, and an interactive Plotly Dash dashboard — and fixes a silent data bug that had been hiding the #1 metro.
+`Python` · `pandas` · `GeoPandas` · `Plotly Dash` · `BigQuery (SQL)` · geospatial · ETL pipeline
+
+**Che-Wei Lee** — M.S. in Data Analytics Engineering, Northeastern University
+
+## Highlights
+
+- Built an **end-to-end geospatial pipeline** mapping **16 years (2000–2015) of 5,200+ U.S. aerospace patents** across **300+ metro areas**, integrating USPTO, Census, and Google BigQuery.
+- **Found and fixed a silent data bug** that had dropped Los Angeles — the nation's #1 metro — to zero; restored it with a CBSA-code spatial join and validated against official USPTO totals.
+- Engineered **concentration (Herfindahl), shift-share growth, and per-capita metrics**, then extended to **38K+ patents** via BigQuery to split aviation vs. space.
+- Shipped an **interactive Plotly Dash dashboard** (animated map + drill-down) and a one-file interactive HTML report.
 
 ![US aerospace patenting map, 2015](reports/figures/map_2015.png)
 
