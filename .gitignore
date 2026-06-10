@@ -1,0 +1,22 @@
+# Raw + interim data (large, reproducible from the pipeline)
+data/raw/
+data/interim/
+*.tsv
+*.tsv.zip
+
+# The small processed warehouse (~0.6 MB) IS committed so the app/notebook
+# run out-of-the-box without re-running the pipeline.
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

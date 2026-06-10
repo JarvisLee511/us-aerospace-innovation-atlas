@@ -1,0 +1,24 @@
+# Core data stack
+pandas>=2.2
+pyarrow>=16          # parquet + chunked TSV reading
+geopandas>=1.0       # spatial join inventor points -> CBSA polygons
+shapely>=2.0
+
+# Visualisation / dashboard
+plotly>=6.0
+dash>=2.17
+dash-bootstrap-components>=1.6
+
+# Pipeline utilities
+requests>=2.31       # bulk download + ODP API
+python-dotenv>=1.0   # load .env (API keys)
+tqdm>=4.66           # download / processing progress
+
+# Notebook
+jupyter>=1.0
+nbformat>=5.10
+kaleido                # static image export for README figures
+
+# OPTIONAL — only for the BigQuery layer (src/bigquery_aerospace.py)
+# google-cloud-bigquery>=3.20
+# db-dtypes>=1.2
